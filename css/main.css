@@ -40,11 +40,12 @@ html {
 
 hr {
     display: block;
-    height: 1px;
+    height: 3px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #7d97ad;
     margin: 10px 0;
     padding: 0;
+    background-color: #7d97ad;
 }
 
 /*
@@ -107,10 +108,6 @@ img, embed, object, video {
   max-width: 100%;
 }
 
-hr {
-  background-color: #7d97ad;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -151,19 +148,10 @@ header {
   line-height: 6px;
 }
 
-div {
-  border: 1px solid black;
-}
-
-
 /* Body Styles ====================================================================*/
 
 body {
   width: 100%;
-}
-
-hr {
-  background-color: #7d97ad;
 }
 
 main {
@@ -181,13 +169,11 @@ main {
   font-size: 2em;
   font-weight: 400;
   margin: 3px;
-  border: 1px solid black;
 }
 
 .featured-link {
   color: #2d3c49;
   font-size: 1em;
-  border: 1px solid black;
 }
 
 .hero {
@@ -322,9 +308,6 @@ img.displayed {
 
 @media screen and (min-width: 520px) {
   /*Tablet style*/
-  #main-content {
-    background-color: lightgrey;
-  }
 
   .header-title {
     font-size: 3em;
@@ -348,9 +331,6 @@ img.displayed {
 
 @media screen and (min-width: 1000px) {
   /*Desktop style*/
-  #main-content {
-    background-color: darkgrey;
-  }
 
   .header-title {
     font-size: 3em;
