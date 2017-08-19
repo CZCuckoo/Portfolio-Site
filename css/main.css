@@ -13,13 +13,17 @@ img, embed, object, video {
   text-transform: uppercase;
 }
 
-#main-content {
+.border {
+  border: 1px solid black;
+}
+
+.padded {
   width: 96%;
   padding: 0 2%;
 }
 
-.border {
-  border: 1px solid black;
+#main-content {
+  width: 100%;
 }
 
 /* Header Styles ====================================================================*/
@@ -123,7 +127,7 @@ img.displayed {
   order: 2;
 }
 
-/*Media Queries ********************************************/
+/*Media Queries *****************************************************/
 
 @media screen and (min-width: 400px) {
   /*Included for very small screens, for header and logo*/
