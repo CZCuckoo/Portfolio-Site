@@ -17,38 +17,6 @@ html {
 }
 
 /*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 3px;
-    border: 0;
-    border-top: 1px solid #7d97ad;
-    margin: 10px 0;
-    padding: 0;
-    background-color: #7d97ad;
-}
-
-/*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
@@ -101,7 +69,6 @@ textarea {
   font-family: Quicksand, sans-serif;
   font-weight: 300;
   color: #424242;
-
 }
 
 img, embed, object, video {
@@ -115,7 +82,10 @@ img, embed, object, video {
 #main-content {
   width: 96%;
   padding: 0 2%;
+}
 
+.border {
+  border: 1px solid black;
 }
 
 /* Header Styles ====================================================================*/
@@ -127,7 +97,7 @@ header {
 .header-title {
   font-size: 1.5em;
   text-align: right;
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 .header-subhead {
@@ -158,10 +128,19 @@ main {
   clear: both;
 }
 
+hr {
+    display: block;
+    height: 3px;
+    border: 0;
+    margin: 10px 0;
+    padding: 0;
+    background-color: #7d97ad;
+}
+
 .featured-work {
   color: #7d97ad;
   font-size: 2em;
-  margin: 5px 0px;
+  margin: 5px 0;
 }
 
 .featured-h2 {
@@ -198,8 +177,6 @@ img.displayed {
   margin: 5px 10px;
 }
 
-
-
 .position-1 {
   order: 0;
 }
@@ -211,8 +188,6 @@ img.displayed {
 .position-3 {
   order: 2;
 }
-
-
 
 /* ==========================================================================
    Helper classes
@@ -233,7 +208,7 @@ img.displayed {
 
 .visuallyhidden {
     border: 0;
-    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
     height: 1px;
     margin: -1px;
     overflow: hidden;
@@ -295,6 +270,8 @@ img.displayed {
    ========================================================================== */
 
 @media screen and (min-width: 400px) {
+  /*Included for very small screens, for header and logo*/
+
   #header-logo {
     max-width: 100px;
   }
@@ -324,9 +301,7 @@ img.displayed {
   .featured {
     text-align: center;
     width: 45%;
-
   }
-
 }
 
 @media screen and (min-width: 1000px) {
@@ -347,15 +322,7 @@ img.displayed {
   .featured {
     text-align: center;
     width: 31%;
-
   }
-}
-
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
